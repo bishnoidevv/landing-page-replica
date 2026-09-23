@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logo from "../assets/spirit-halloween-logo.png";
-import qrCode from "../assets/reference-qr.png";
 
 const steps = [
   "Click the “Get Now” button",
@@ -47,29 +46,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen bg-page px-4 py-6 font-body text-foreground sm:px-6 sm:py-12">
-      <div
-        className="fixed inset-0 z-50 hidden items-center justify-center bg-foreground/95 px-6 lg:flex"
-        role="dialog"
-        aria-label="Mobile device required"
-      >
-        <div className="w-full max-w-sm rounded-2xl border-t-[6px] border-primary bg-card px-8 py-10 text-center shadow-page">
-          <h2 className="font-display text-4xl leading-none text-card-foreground">
-            Mobile device required
-          </h2>
-          <p className="mt-3 text-sm font-semibold text-muted-foreground">
-            This offer is only available on your phone. Scan the QR code below with your phone&apos;s camera to continue.
-          </p>
-          <img
-            src={qrCode}
-            alt="QR code linking to spr.finds70.com"
-            className="mx-auto mt-6 w-56 rounded-lg border-4 border-foreground"
-          />
-          <p className="mt-5 text-xs font-extrabold uppercase tracking-[0.16em] text-primary">
-            spr.finds70.com
-          </p>
-        </div>
-      </div>
-
       <section className="offer-shell mx-auto w-full max-w-[440px] overflow-hidden border-t-[6px] border-primary bg-background shadow-page">
         <header className="relative overflow-hidden px-6 pb-6 pt-8 text-center sm:px-8 sm:pt-10">
           <div className="cobweb" aria-hidden="true" />
